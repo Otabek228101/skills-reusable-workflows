@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -36,7 +36,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       page_url: ${{ steps.deployment.outputs.page_url }}
     steps:
