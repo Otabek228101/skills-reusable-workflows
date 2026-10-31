@@ -29,7 +29,7 @@ jobs:
     name: Comment on PR
     if: always()
     needs: github-pages
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     permissions:
       pull-requests: write
     steps:
